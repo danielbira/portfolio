@@ -1,12 +1,19 @@
-import styled from 'styled-components'
-import EstiloGlobal from './styles'
-import Teste from './Teste'
+import EstiloGlobal, { Container } from './styles'
+import Sobre from './containers/Sobre'
+import Sidebar from './containers/Sidebar'
+import Projetos from './containers/Projetos'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <Teste />
+      <Container>
+        <Sidebar />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
